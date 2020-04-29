@@ -42,15 +42,8 @@ const Homepage = () => {
   ]);
   return (
     <HomepageContainer>
-      {directory.map(({ title, imageUrl, id, size, linkUrl }) => {
-        return (
-          <HomepageMenuItem
-            key={id}
-            imageUrl={imageUrl}
-            size={size}
-            title={title.toUpperCase()}
-          />
-        );
+      {directory.map(({ id, ...otherSectionProps }) => {
+        return <HomepageMenuItem key={id} {...otherSectionProps} />;
       })}
     </HomepageContainer>
   );
