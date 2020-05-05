@@ -7,6 +7,7 @@ import Header from "./components/Header";
 import Homepage from "./pages/Homepage";
 import ShopPage from "./pages/ShopPage";
 import ContactPage from "./pages/ContactPage";
+import Sign from "./pages/Sign";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
         <Route exact path="/" component={Homepage} />
         <Route path="/shop" component={ShopPage} />
         <Route path="/contact" component={ContactPage} />
+        <Route path="/sign" component={Sign} />
       </Switch>
     </div>
   );
