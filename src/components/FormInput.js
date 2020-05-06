@@ -1,11 +1,8 @@
-import React, { useEffect } from "react";
+import React from "react";
 
 import "../styles/FormInput.scss";
 
 const FormInput = ({ handleChange, label, ...otherProps }) => {
-  useEffect(() => {
-    console.log(otherProps);
-  });
   return (
     <div className="group">
       <input className="form-input" onChange={handleChange} {...otherProps} />
